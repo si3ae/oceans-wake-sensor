@@ -1,6 +1,7 @@
 # Low-power wake sensor for long-term deep-sea observation: tank rig
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24050749.svg)](https://doi.org/10.5281/zenodo.24050749)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24050748.svg)](https://doi.org/10.5281/zenodo.24050748)
 
 Hardware, firmware and tools for the tank experiments behind an IEEE/MTS OCEANS 2027 student poster
 (abstract due 2027-01-15). A 160 x 120 HM01B0 camera on a Raspberry Pi Pico watches a dark tank and decides
@@ -38,4 +39,5 @@ Code: MIT (`LICENSE`). Data and figures: CC BY 4.0. Third-party code keeps its o
 
 ## Citation
 
-See `CITATION.cff`. v0.1.0 is archived on Zenodo: https://doi.org/10.5281/zenodo.24050749
+Zenodo DOI for all versions (resolves to the latest): https://doi.org/10.5281/zenodo.24050748
+v0.1.0 (rig design, not yet verified on hardware): https://doi.org/10.5281/zenodo.24050749
