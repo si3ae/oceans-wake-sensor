@@ -1,0 +1,21 @@
+item,qty,part,role,source,unit_price,currency,price_note
+1,2,"Raspberry Pi Pico H (RP2040, headers soldered)",wake sensor MCU; environment MCU,Devicemart,6400,KRW,VAT excluded
+2,2,Arducam HM01B0 QVGA camera module for Raspberry Pi Pico (B0315),wake sensor camera (1 spare),Amazon (Arducam store),12.99,USD,before 5% multi-buy discount and shipping
+3,10,2N7000 N-MOSFET TO-92,LED low-side switch,Devicemart,70,KRW,VAT excluded
+4,2,IRLZ44NPBF N-MOSFET TO-220,1 W LED switch (optional),Devicemart,1300,KRW,VAT excluded
+5,2,BPW34 photodiode,transmissometer receiver,Devicemart,1100,KRW,VAT excluded
+6,1,DS18B20 waterproof temperature sensor module with terminal block (SEN050007),water temperature log,Devicemart,4300,KRW,VAT excluded
+7,2,1 W power LED on star heatsink (white),bright illumination (optional),Devicemart,3300,KRW,VAT excluded
+8,5,5 mm super-bright white LED (5BCLSC00),sensor LED; transmissometer source,Devicemart,480,KRW,VAT excluded
+9,1,Low-iron glass tank 40 x 26 x 33 cm (+3 cm stand); 6 mm glass,test tank,MIMINE AQUA,,KRW,price not recorded
+10,1,Raspberry Pi 4 Model B,time-lapse baseline camera host,lab stock,,,
+11,1,Raspberry Pi camera module (model to be recorded),time-lapse baseline camera,lab stock,,,
+12,1,Raspberry Pi 3,rig controller (optional),lab stock,,,
+13,1,SG90 servo,target motion,Arduino kit,,,
+14,n,Resistors 100 R / 220 R / 10 k / 100 k (47 k and 1 M optional); 1 R and 10-100 R shunts,LED current; gate; pull-down; photodiode load; shunt,lab stock,,,record measured values
+15,1,Tektronix TBS1202B-EDU oscilloscope,current waveforms,lab,,,
+16,1,METEX MXD-4660A multimeter,static currents; resistor values,lab,,,
+17,1,QJE QJ-3005SH III DC power supply,clean 5 V for energy runs; current-limited 1 W LED,lab,,,
+18,1,Black matte PVC foam board (Foamex),partition and base,local store,,,
+19,1,Black matte cloth,light-tight cover,local store,,,
+20,n,Gelatin; clear fishing line; milk,targets; target suspension; turbidity,local store,,,

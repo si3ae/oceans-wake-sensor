@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "author": "Sinae Hong",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard-half",
+      "id": "bb2",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico2",
+      "top": -260,
+      "left": -40,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "R4_100",
+      "top": -120,
+      "left": 250,
+      "rotate": 90,
+      "attrs": {
+        "value": "100"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "R5_220",
+      "top": -120,
+      "left": 170,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "R6_10k",
+      "top": -120,
+      "left": 210,
+      "rotate": 90,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "R7_100k",
+      "top": -120,
+      "left": 330,
+      "rotate": 90,
+      "attrs": {
+        "value": "100000"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "LED2_remote",
+      "top": -150,
+      "left": 290,
+      "attrs": {
+        "color": "white"
+      }
+    },
+    {
+      "type": "wokwi-ds18b20",
+      "id": "DS1",
+      "top": -150,
+      "left": 400,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "SERVO1",
+      "top": -170,
+      "left": 470,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "note_q2",
+      "top": -215,
+      "left": 120,
+      "attrs": {
+        "text": "Q2 2N7000 (not in Wokwi): S=e10, G=e11, D=e12. PD1 BPW34 (not in Wokwi): cathode -> a20, anode -> a21 (long wires)"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "note_rails",
+      "top": -240,
+      "left": 120,
+      "attrs": {
+        "text": "Pico 2. Top rails: + = 3V3, - = GND (pin 38). Bottom rails: + = 5 V (VBUS), - = GND (pin 28)"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "pico2:3V3",
+      "bb2:tp.1",
+      "red",
+      []
+    ],
+    [
+      "pico2:GND.8",
+      "bb2:tn.1",
+      "black",
+      []
+    ],
+    [
+      "pico2:VBUS",
+      "bb2:bp.1",
+      "red",
+      []
+    ],
+    [
+      "pico2:GND.6",
+      "bb2:bn.1",
+      "black",
+      []
+    ],
+    [
+      "bb2:10t.a",
+      "bb2:tn.10",
+      "black",
+      []
+    ],
+    [
+      "R5_220:1",
+      "bb2:11t.d",
+      "orange",
+      []
+    ],
+    [
+      "R5_220:2",
+      "bb2:14t.d",
+      "orange",
+      []
+    ],
+    [
+      "R6_10k:1",
+      "bb2:11t.c",
+      "brown",
+      []
+    ],
+    [
+      "R6_10k:2",
+      "bb2:tn.11",
+      "brown",
+      []
+    ],
+    [
+      "pico2:GP15",
+      "bb2:14t.a",
+      "yellow",
+      []
+    ],
+    [
+      "LED2_remote:C",
+      "bb2:12t.a",
+      "gray",
+      []
+    ],
+    [
+      "LED2_remote:A",
+      "bb2:13t.a",
+      "white",
+      []
+    ],
+    [
+      "R4_100:1",
+      "bb2:13t.b",
+      "blue",
+      []
+    ],
+    [
+      "R4_100:2",
+      "bb2:16t.b",
+      "blue",
+      []
+    ],
+    [
+      "bb2:16t.a",
+      "bb2:bp.16",
+      "red",
+      []
+    ],
+    [
+      "bb2:20t.b",
+      "bb2:tp.20",
+      "red",
+      []
+    ],
+    [
+      "pico2:GP26",
+      "bb2:21t.d",
+      "green",
+      []
+    ],
+    [
+      "R7_100k:1",
+      "bb2:21t.c",
+      "violet",
+      []
+    ],
+    [
+      "R7_100k:2",
+      "bb2:23t.c",
+      "violet",
+      []
+    ],
+    [
+      "pico2:GND.7",
+      "bb2:23t.a",
+      "black",
+      []
+    ],
+    [
+      "DS1:VCC",
+      "bb2:26t.a",
+      "red",
+      []
+    ],
+    [
+      "DS1:DQ",
+      "bb2:27t.a",
+      "yellow",
+      []
+    ],
+    [
+      "DS1:GND",
+      "bb2:28t.a",
+      "black",
+      []
+    ],
+    [
+      "bb2:26t.b",
+      "bb2:tp.26",
+      "red",
+      []
+    ],
+    [
+      "pico2:GP22",
+      "bb2:27t.d",
+      "yellow",
+      []
+    ],
+    [
+      "bb2:28t.b",
+      "bb2:tn.28",
+      "black",
+      []
+    ],
+    [
+      "pico2:GP16",
+      "bb2:30t.a",
+      "orange",
+      []
+    ],
+    [
+      "SERVO1:PWM",
+      "bb2:30t.d",
+      "orange",
+      []
+    ],
+    [
+      "SERVO1:V+",
+      "bb2:bp.30",
+      "red",
+      []
+    ],
+    [
+      "SERVO1:GND",
+      "bb2:bn.30",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

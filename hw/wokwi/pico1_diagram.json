@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "author": "Sinae Hong",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard-half",
+      "id": "bb1",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico1",
+      "top": -260,
+      "left": -40,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "R1_100",
+      "top": -120,
+      "left": 240,
+      "rotate": 90,
+      "attrs": {
+        "value": "100"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "R2_220",
+      "top": -120,
+      "left": 160,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "R3_10k",
+      "top": -120,
+      "left": 200,
+      "rotate": 90,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "LED1",
+      "top": -140,
+      "left": 290,
+      "attrs": {
+        "color": "white"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "note_q1",
+      "top": -190,
+      "left": 120,
+      "attrs": {
+        "text": "Q1 2N7000 (not in Wokwi): S=e10, G=e11, D=e12, flat face toward you"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "note_rails",
+      "top": -215,
+      "left": 120,
+      "attrs": {
+        "text": "Pico 1. Top rails: + = 5 V (VBUS), - = GND. Camera: direct F-F, see WIRING.md"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "pico1:VBUS",
+      "bb1:tp.1",
+      "red",
+      []
+    ],
+    [
+      "pico1:GND.4",
+      "bb1:tn.1",
+      "black",
+      []
+    ],
+    [
+      "pico1:GP15",
+      "bb1:14t.a",
+      "yellow",
+      []
+    ],
+    [
+      "bb1:10t.a",
+      "bb1:tn.10",
+      "black",
+      []
+    ],
+    [
+      "R2_220:1",
+      "bb1:11t.d",
+      "orange",
+      []
+    ],
+    [
+      "R2_220:2",
+      "bb1:14t.d",
+      "orange",
+      []
+    ],
+    [
+      "R3_10k:1",
+      "bb1:11t.c",
+      "brown",
+      []
+    ],
+    [
+      "R3_10k:2",
+      "bb1:tn.11",
+      "brown",
+      []
+    ],
+    [
+      "LED1:C",
+      "bb1:12t.a",
+      "gray",
+      []
+    ],
+    [
+      "LED1:A",
+      "bb1:13t.a",
+      "white",
+      []
+    ],
+    [
+      "R1_100:1",
+      "bb1:13t.b",
+      "blue",
+      []
+    ],
+    [
+      "R1_100:2",
+      "bb1:tp.13",
+      "red",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

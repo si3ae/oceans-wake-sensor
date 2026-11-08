@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this rig or its data, please cite it as below."
+title: "Low-power wake sensor for long-term deep-sea observation: tank rig"
+authors:
+  - family-names: Hong
+    given-names: Sinae
+    affiliation: "Busan University of Foreign Studies"
+    orcid: "https://orcid.org/0009-0006-7237-6228"
+version: 0.1.0
+date-released: 2026-11-08
+license: MIT
+repository-code: "https://github.com/si3ae/oceans-wake-sensor"
